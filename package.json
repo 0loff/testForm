@@ -1,0 +1,34 @@
+{
+  "name": "pptemplates",
+  "version": "1.0.0",
+  "description": "### Добавление новых шаблонов",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.0",
+    "gulp-clean": "^0.4.0",
+    "normalize.scss": "^0.1.0"
+  },
+  "devDependencies": {
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-imagemin": "^6.1.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "node-normalize-scss": "^8.0.1"
+  },
+  "scripts": {
+    "minified-img": "gulp img --cwd templates/default/v4",
+    "postinstall": "./build.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@stash.ecommpay.com:7999/frt2/pptemplates.git"
+  },
+  "author": "",
+  "license": "ISC"
+}

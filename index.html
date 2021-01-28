@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header__item header__item_title">Задание</div>
+        <div class="header__item">1. Необходимо составить тестовые сценарии</div>
+        <div class="header__item header__item_form-title">Форма обратной связи</div>
+    </div>
+    <form class="form">
+        <div class="form-items-group">
+
+            <div class="checkboxes">
+                <div class="field field_checkbox">
+                    <input type="checkbox" id="check1" class="check" value="c1" name="check1">
+                    <label for="scales">check1</label>
+                </div>
+                <div class="field field_checkbox">
+                    <input type="checkbox" id="check2" value="c2" name="check2">
+                    <label for="scales">check2</label>
+                </div>
+                <div class="field field_checkbox">
+                    <input type="checkbox" id="check3" value="c3" name="check3">
+                    <label for="scales">check3</label>
+                </div>
+                <div class="field field_checkbox">
+                    <input type="checkbox" id="check4" value="c4" name="check4">
+                    <label for="scales">check4</label>
+                </div>
+                <div class="field field_checkbox">
+                    <input type="checkbox" id="check5" value="c5" name="check5">
+                    <label for="scales">check5</label>
+                </div>
+                <div id="clearCheckboxes" class="btn btn_clear">Очистить чекбоксы</div>
+            </div>
+            <div class="radiobuttons">
+                <div class="field field_radio">
+                    <input type="radio" id="radio1" name="radiobuttons" value="radio1" checked>
+                    <label for="radio1">radio1</label>
+                </div>
+                <div class="field field_radio">
+                    <input type="radio" id="radio2" name="radiobuttons" value="radio2">
+                    <label for="radio2">radio2</label>
+                </div>
+                <div class="field field_radio">
+                    <input type="radio" id="radio3" name="radiobuttons" value="radio3">
+                    <label for="radio3">radio3</label>
+                </div>
+                <div class="field field_radio">
+                    <input type="radio" id="radio4" name="radiobuttons" value="radio4">
+                    <label for="radio4">radio4</label>
+                </div>
+                <div class="field field_radio">
+                    <input type="radio" id="radio5" name="radiobuttons" value="radio5">
+                    <label for="radio5">radio5</label>
+                </div>
+                <div id="clearRadio" class="btn btn_clear">Сбросить радиобаттнс</div>
+            </div>
+        </div>
+        <div class="form-items-group">
+            <div class="results_list">
+                <div id="resultDisplay" class="results_list__display">
+                    <ul></ul>
+                </div>
+                <div class="results_list__handler">
+                    <div id="showResults" class="btn btn_submit">Submit</div>
+                    <div id="clearResults" class="btn btn_error">Clear all</div>
+                    <div id="refreshResults" class="btn btn_refresh">Refresh results</div>
+                    
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script src="js/jQuery.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

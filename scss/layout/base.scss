@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    width: 100%;
+    max-width: 630px;
+    margin: 0 auto;
+    padding: 20px 15px;
+}
+
+.form {
+    display: flex;
+    padding: 15px;
+    width: 100%;
+    background-color: #f3eeee;
+    border: solid 1px #121212;
+    border-radius: 15px;    
+    &-items-group {
+        margin: 0 20px;
+        &:first-of-type {
+            flex-shrink: 0;
+        }
+        &:last-of-type {
+            flex-grow: 1;
+        }
+    }
+}
+.header {
+    text-align: center;
+    &__item {
+        margin-bottom: 15px;
+        &_title {
+            font-weight: bold;
+            font-size: 20px;
+        }
+        &_form-title {
+            font-size: 20px;
+            text-transform: uppercase;
+            color: #877b7b;
+        }
+    }
+}
+.field {
+    &_radio,
+    &_checkbox {
+        margin-bottom: 10px;
+    }
+}
+.checkboxes {
+    margin-bottom: 20px;
+}
+.btn {
+    border: none;
+    background: none;
+    background-color: none;
+    cursor: pointer;
+    transition: 0.6s;
+    outline: none;
+    border: solid 1px #ccc;
+    padding: 10px 10px;
+    border-radius: 10px;
+    &_clear {
+        
+        &:hover {
+            background-color: #9993cc;
+        }
+    }
+    &_submit {
+        margin-top: 10px;
+        width: 150px;
+        text-align: center;
+        &:hover {
+            background-color: #99dc78;
+        }
+    }
+    &_error {
+        margin-top: 10px;
+        width: 150px;
+        text-align: center;
+        &:hover {
+            background-color: #e12a58;
+        }
+    }
+    &_refresh {
+        margin-top: 10px;
+        width: 150px;
+        text-align: center;
+        &:hover {
+            background-color: #eafa82;
+        }
+    }
+}
+.results_list {
+    &__display {
+        height: 300px;
+        width: 100%;
+        border: solid 1px #ccc; 
+        border-radius: 15px;
+    }
+    &__handler {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
